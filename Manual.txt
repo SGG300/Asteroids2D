@@ -1,0 +1,14 @@
+Controls:
+
+"Space" or Virtual Button "shot": Fire projectile
+"W & D" or "Up & Down": Forwards and backwards movement
+"A & S" or "Left & Right": Rotate
+"Esc" ingame to open settings menu
+
+Details:
+
+-Three lifes, everytime you touch an enemy you lost a heart, until you lost three of them and die
+-Asteroids give 1 score points when destroyed with shots.
+-UFO follows you and give 10 score points.
+-When you reach 6 or more score points you shot two projectiles everytime you fire, 11 or more you shot three.
+-The Highscore is persistent, even when you close the application it stores the data and gives your best high score.
