@@ -15,6 +15,7 @@ public class GameManagerScript : MonoBehaviour
     public GameObject spaceShip;//Reference to the spaceShip
     public GameObject explosion;//prefab of explosion
     public AudioSource CrashAndBurn;//sound we make at the end of the game
+    public AsteroidsGenerator asteroidsGenerator;
 
     private int score; //The Actual Score
     private int maxScore = 9999;

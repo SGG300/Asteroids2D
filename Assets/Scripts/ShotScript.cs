@@ -10,11 +10,6 @@ public class ShotScript : MonoBehaviour
 
     public float durationTime = 10.0f;//How much it lasts before it is destroyed
     private float actualTime = 0.0f;//The actual time
-                                    // Use this for initialization
-    void Start()
-    {
-        
-    }
 
     public void OnEnable()
     {
@@ -37,8 +32,11 @@ public class ShotScript : MonoBehaviour
         {
             GameManagerScript.instance.AddScore(1);
             Instantiate(explosion, transform.position, transform.rotation);
-            other.gameObject.SetActive(false);
+            other.GetComponent<AsteroidScript>().DestroyAsteroid();
             gameObject.SetActive(false);
+            
+
+
         }
         else if (other.tag == "UFO")
         {

@@ -76,10 +76,8 @@ public class SpaceshipControlScript : MonoBehaviour
 
     void FixedUpdate()
     {
-
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
-
 
         rBody.angularVelocity = -moveHorizontal * speedAngular;
         rBody.velocity = transform.up * moveVertical * speedForward;
@@ -147,5 +145,5 @@ public class SpaceshipControlScript : MonoBehaviour
             other.gameObject.SetActive(false);
         }
     }
-
+    
 }
